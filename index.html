@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <!-- CONTENT -->
+        <div class="content background">
+          <div class="icon">
+            <img
+              src="images/logo.svg"
+              alt="Logo icon of Base Apparel Company"
+            />
+          </div>
+
+          <picture class="hidden-mobile">
+            <img
+              class="img-mobile"
+              src="images/hero-mobile.jpg"
+              alt="Image of a female model wearing orange shirt"
+            />
+          </picture>
+
+          <h1 class="heading"><span> We're </span>coming soon</h1>
+
+          <p class="text">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+
+          <form class="form" id="form" novalidate autocomplete="off">
+            <fieldset class="email">
+              <legend class="visually-hidden">
+                Please enter your email address
+              </legend>
+
+              <input
+                class="email-input"
+                type="email"
+                placeholder="Email Address
+              "
+                name="email"
+                required
+              />
+
+              <img
+                class="error-icon hidden"
+                src="images/icon-error.svg"
+                alt="Error icon"
+              />
+
+              <img
+                class="ok-icon hidden"
+                src="images/green-checkmark-icon.svg"
+                alt="Error icon"
+              />
+
+              <p class="error-text hidden">Please provide a valid email</p>
+
+              <button class="button">
+                <img
+                  class="arrow"
+                  src="images/icon-arrow.svg"
+                  alt="icon of search arrow"
+                />
+              </button>
+            </fieldset>
+          </form>
+        </div>
+
+        <!-- IMG -->
+        <picture>
+          <img
+            class="img"
+            src="images/hero-desktop.jpg"
+            alt="Image of a female model wearing orange shirt"
+          />
+        </picture>
+      </div>
+    </main>
+  </body>
+
+  <!-- JS -->
+  <script defer src="script.js"></script>
+</html>
